@@ -132,7 +132,7 @@
 			  </div>
     <div class="col-xs-12 col-sm-6 col-md-12">
 	      <hr class="brdr-bttm hidden-sm">
-	    <fieldset><legend class="h5">Other situations</legend>
+	    <fieldset class="gc-chckbxrdio"><legend class="h5">Other situations</legend>
 <ul class="list-unstyled lst-spcd">
               <li class="checkbox gc-chckbxrdio"><input id="fastest-time" type="checkbox" class="wb-tagfilter-ctrl"  name="fastest-time" value="time__1day">
               <label for="fastest-time">Fastest processing time</label></li>
@@ -172,7 +172,13 @@
 		 <p>Some financial institutions allow you to add the CRA as a payee to make a single or multiple scheduled payments.</p>	
                   <p>Payments are made through a <strong>direct withdrawal from your savings or chequing account</strong>.</p>
 				  <details> class="mrgn-bttm-lg"><summary>Payments we <strong>do</strong> and <strong>do not</strong> accept online through your bank or credit union</summary>
-					  <div data-ajax-replace="online-banking.html#ajax-can-cant>details>dl"></div>
+					  <p>Payments we accept:</p>
+					  
+					  <div data-ajax-replace="online-banking.html#ajax-can-cant>details>dl:nth-child(1)"></div>
+ <p>Payments we do not accept:</p>
+					  
+					  <div data-ajax-replace="online-banking.html#ajax-can-cant>details>dl:nth-child(2)"></div>
+					  
 				  </details>
 		
                   <p><span class="h4">Learn how to pay:</span> <a href="online-banking.html">Using your bank or credit union website or app</a></p>
