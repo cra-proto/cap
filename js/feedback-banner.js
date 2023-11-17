@@ -12,11 +12,6 @@ $('#wb-srch-sub').attr("disabled", true);
 $( ".gcweb-menu" ).on( "wb-ready.gcweb-menu", function( event ) {
 	$("a[href='https://www.canada.ca/en/services/taxes.html']").attr("href", "https://cra-proto.github.io/cap/taxes.html").addClass("prototype");
 	$("a[href='https://www.canada.ca/en/services/taxes/income-tax.html']").attr("href", "https://cra-proto.github.io/cap/income-tax.html").addClass("prototype");
-	$("a[href='https://www.canada.ca/en/revenue-agency/corporate/contact-information.html']").attr("href", "https://cra-proto.github.io/cap/contact-cra.html").addClass("prototype");
-	$("a[href='https://www.canada.ca/en/revenue-agency/services/e-services/cra-login-services.html']").attr("href", "https://cra-proto.github.io/cap/cra-sign-in.html").addClass("prototype");
-	$("a[href='https://www.canada.ca/en/revenue-agency/services/e-services/my-business-account.html']").attr("href", "https://cra-proto.github.io/cap/my-business-account.html").addClass("prototype");
-	$("a[href='https://www.canada.ca/en/services/taxes/child-and-family-benefits.html']").attr("href", "https://cra-proto.github.io/cap/tax-credits-benefits.html").addClass("prototype");
-    $("a[href='https://www.canada.ca/en/services/taxes/income-tax/business-or-professional-income.html']").attr("href", "https://cra-proto.github.io/cap/business-or-professional-income.html").addClass("prototype");
 	$("a[href='./cra.html']").attr("href", "https://cra-proto.github.io/cap/cra.html").addClass("prototype");
 	$(".gcweb-menu a:not(.prototype)").attr("href", "https://cra-proto.github.io/cap/404.html");	
 	$("a[href*='canada.ca']").attr("href", "https://cra-proto.github.io/cap/404.html");
