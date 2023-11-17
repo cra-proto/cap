@@ -127,9 +127,9 @@
             <div class="wb-fieldflow-header">
               <p class="wb-fieldflow-label">Should the payment be made to the CRA?</p>
               <div class="gc-font-2019">
-                <p>Some payments must be repaid to the department or agency they were issued from: </p>
                  <details>
-                  <summary>Employment and Social Development Canada (ESDC) payments</summary>
+		<summary>These are payments the CRA does <strong>not</strong> accept</summary>	 
+                  <h2 class="h3 mrgn-tp-sm">Employment and Social Development Canada (ESDC)</h2>
                   <p>Amounts that should be repaid to ESDC include:</p>
                   <ul>
                     <li>Canada Apprentice Loan (CAL)</li>
@@ -147,15 +147,14 @@
                     <li>Training Allowance (TAPS)</li>
                     <li>Wage Earner Protection Program (WEPP)</li>
                   </ul>
-                  <p>If are making a payment for an item listed above, select <strong>no</strong>.</p>
-                </details>
-                <details>
-                  <summary>Canada Border Service Agency (CBSA) payments</summary>
+   <h2 class="h3">Canada Border Service Agency (CBSA)</h2>
                   <p>Amounts that should be repaid to CBSA include:</p>
                   <ul>
                     <li>Customs imports</li>
                   </ul>
-                   <p>If are making a payment for an item listed above, select <strong>no</strong>.</p>
+			 
+                  <p>If are making a payment for an item listed above, select <strong>no</strong>.</p>
+               
                 </details>
               </div>
             </div>
@@ -469,6 +468,33 @@
     <!--Payment types //-->
     <section id="bank-account-pymnt" class="ff-answers">
       <h3><span class="fas fa-university fa-fw mrgn-rght-sm"></span>Chequing or savings account</h3>
+  <div id="bank-account-online" class="row ff-answers ">
+        <div  class="col-xs-11 col-xs-offset-1">
+          <div class="panel panel-info brdr-rds-0 mrgn-bttm-lg">
+            <header class="panel-heading">
+              <h4 class="panel-title">Online banking</h4>
+            </header>
+            <div class="panel-body">
+              <p><span class="far fa-clock mrgn-rght-sm"></span><strong>Considered as paid:</strong> the <strong>same or next business day</strong> (varies based on your bank or credit union)</p>
+              <p><span class="h4">Learn how to pay:</span> <a class="stretched-link"  href="online-banking.html">Using your bank or credit union website or app</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+ <div id="bank-account-cra" class="row ff-answers ">
+        <div  class="col-xs-11 col-xs-offset-1">
+          <div class="panel panel-info brdr-rds-0 mrgn-bttm-lg">
+            <header class="panel-heading">
+              <h4 class="panel-title">Schedule one or more future-dated payments in CRA My Account, My Business Account, or Represent a Client</h4>
+        </header>
+            <div class="panel-body">
+              <p><span class="far fa-clock mrgn-rght-sm"></span><strong>Considered as paid:</strong> Usually the <strong>same day</strong> (if scheduled at least 5 business days in advance)</p>
+              <p><span class="h4">Learn how to pay:</span> <a class="stretched-link"  href="scheduled-withdrawal.html">Using pre-authorized debit (schedule a withdrawal)</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+	    
       <div id="bank-account-counter-cdn" class="row ff-answers ">
         <div  class="col-xs-11 col-xs-offset-1">
           <div  class="panel panel-info brdr-rds-0 mrgn-bttm-lg">
@@ -482,6 +508,19 @@
           </div>
         </div>
       </div>
+	  <div id="bank-account-atm" class="row ff-answers ">
+        <div  class="col-xs-11 col-xs-offset-1">
+          <div class="panel panel-info brdr-rds-0 mrgn-bttm-lg">
+            <header class="panel-heading">
+              <h4 class="panel-title">ATM of your bank or credit union</h4>
+            </header>
+            <div class="panel-body">
+              <p><span class="far fa-clock mrgn-rght-sm"></span><strong>Considered as paid:</strong> within <strong>1 to 2 business days</strong></p>
+              <p><span class="h4">Learn how to pay:</span> <a class="stretched-link"  href="atm.html">At your bank or credit union's ATM</a></p>
+            </div>
+          </div>
+        </div>
+      </div>    
       <div id="bank-account-counter-int" class="row ff-answers ">
         <div  class="col-xs-11 col-xs-offset-1">
           <div class="panel panel-info brdr-rds-0 mrgn-bttm-lg">
@@ -496,71 +535,12 @@
         </div>
       </div>
 
-      <div id="bank-account-atm" class="row ff-answers ">
-        <div  class="col-xs-11 col-xs-offset-1">
-          <div class="panel panel-info brdr-rds-0 mrgn-bttm-lg">
-            <header class="panel-heading">
-              <h4 class="panel-title">ATM of your bank or credit union</h4>
-            </header>
-            <div class="panel-body">
-              <p><span class="far fa-clock mrgn-rght-sm"></span><strong>Considered as paid:</strong> within <strong>1 to 2 business days</strong></p>
-              <p><span class="h4">Learn how to pay:</span> <a class="stretched-link"  href="atm.html">At your bank or credit union's ATM</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="bank-account-online" class="row ff-answers ">
-        <div  class="col-xs-11 col-xs-offset-1">
-          <div class="panel panel-info brdr-rds-0 mrgn-bttm-lg">
-            <header class="panel-heading">
-              <h4 class="panel-title">Online banking</h4>
-            </header>
-            <div class="panel-body">
-              <p><span class="far fa-clock mrgn-rght-sm"></span><strong>Considered as paid:</strong> the <strong>same or next business day</strong> (varies based on your bank or credit union)</p>
-              <p><span class="h4">Learn how to pay:</span> <a class="stretched-link"  href="online-banking.html">Using your bank or credit union website or app</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="bank-account-cra" class="row ff-answers ">
-        <div  class="col-xs-11 col-xs-offset-1">
-          <div class="panel panel-info brdr-rds-0 mrgn-bttm-lg">
-            <header class="panel-heading">
-              <h4 class="panel-title">Schedule multiple payments or future-dated payments in CRA My Account, My Business Account or Represent a Client</h4>
-        </header>
-            <div class="panel-body">
-              <p><span class="far fa-clock mrgn-rght-sm"></span><strong>Considered as paid:</strong> Usually the <strong>same day</strong> (if scheduled at least 5 business days in advance)</p>
-              <p><span class="h4">Learn how to pay:</span> <a class="stretched-link"  href="scheduled-withdrawal.html">Using pre-authorized debit (schedule a withdrawal)</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    
 
     
-    <section id="credit-card-pymt" class="ff-answers">
-      <h3><span class="far fa-credit-card fa-fw mrgn-rght-sm"></span>Credit card</h3>
-      <div class="row">
-        <div  class="col-xs-11 col-xs-offset-1">
-          <div class="panel panel-info brdr-rds-0 mrgn-bttm-lg">
-            <header class="panel-heading">
-              <h4 class="panel-title">Third-party service provider</h4>
-        </header>
-            <div class="panel-body">
-              <!--div class="alert alert-info alert-hide-reset third-party-alert hidden">
-                <p>Most <mark>third-party providers</mark> will not be able to process this payment.</p>
-              </div-->
-              <p><span class="fas fa-dollar-sign fa-lg mrgn-rght-sm"></span>Service fees will be charged by PaySimply</p>
-              <p><span class="far fa-clock mrgn-rght-sm"></span><strong>Considered as paid:</strong> it <strong>varies</strong>, based on the service provider</p>
-              <p><span class="h4">Learn how to pay:</span> <a class="stretched-link"  href="third-party.html">Using a third-party service provider</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
+     
     </section>
-          
+
     <section id="debit-card-pymnt" class="ff-answers">
       <h3><span class="fas fa-credit-card fa-fw mrgn-rght-sm"></span>Debit card (Interac Debit, Visa Debit, or Debit Mastercard)</h3>
       <div class="row ff-answers " id="debit-card-cra" >
@@ -608,23 +588,7 @@
         </div>
       </div>
     </section>
-    <section id="wire-transfer-pymnt" class="ff-answers">
-      <h3><span class="fas fa-fax fa-fw mrgn-rght-sm"></span>Wire transfer</h3>
-      <div class="row ff-answers " id="bank-account-counter-int" >
-        <div  class="col-xs-11 col-xs-offset-1">
-          <div class="panel panel-info brdr-rds-0 mrgn-bttm-lg">
-            <header class="panel-heading">
-              <h4 class="panel-title">Counter (teller) service at bank or credit union outside of Canada </h4>
-            </header>
-            <div class="panel-body">
-              <p><span class="far fa-clock mrgn-rght-sm"></span><strong>Considered as paid:</strong> the <strong>same or next business day</strong></p>
-              <p><span class="h4">Learn how to pay:</span> <a class="stretched-link" href="wire-transfer.html">At a foreign bank or credit union</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="online-transfer-pymnt" class="ff-answers">
+ <section id="online-transfer-pymnt" class="ff-answers">
       <h3><span class="fas fa-exchange-alt fa-fw mrgn-rght-sm"></span>Online money transfer (e.g. PayPal)</h3>
       <div class="row ff-answers " >
         <div  class="col-xs-11 col-xs-offset-1">
@@ -644,7 +608,28 @@
         </div>
       </div>
     </section>
-    <section id="cheque-pymnt" class="ff-answers">
+	  
+    <section id="credit-card-pymt" class="ff-answers">
+      <h3><span class="far fa-credit-card fa-fw mrgn-rght-sm"></span>Credit card</h3>
+      <div class="row">
+        <div  class="col-xs-11 col-xs-offset-1">
+          <div class="panel panel-info brdr-rds-0 mrgn-bttm-lg">
+            <header class="panel-heading">
+              <h4 class="panel-title">Third-party service provider</h4>
+        </header>
+            <div class="panel-body">
+              <!--div class="alert alert-info alert-hide-reset third-party-alert hidden">
+                <p>Most <mark>third-party providers</mark> will not be able to process this payment.</p>
+              </div-->
+              <p><span class="fas fa-dollar-sign fa-lg mrgn-rght-sm"></span>Service fees will be charged by the provider</p>
+              <p><span class="far fa-clock mrgn-rght-sm"></span><strong>Considered as paid:</strong> it <strong>varies</strong>, based on the service provider</p>
+              <p><span class="h4">Learn how to pay:</span> <a class="stretched-link"  href="third-party.html">Using a third-party service provider</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+	 <section id="cheque-pymnt" class="ff-answers">
       <h3><span class="fas fa-money-check-alt fa-fw mrgn-rght-sm"></span>Cheque</h3>
       <div class="row ff-answers " id="cheque-order-stamped" >
         <div  class="col-xs-11 col-xs-offset-1">
@@ -675,7 +660,25 @@
           </div>
         </div>
       </div>
-    </section-->
+    </section>  
+    <section id="wire-transfer-pymnt" class="ff-answers">
+      <h3><span class="fas fa-fax fa-fw mrgn-rght-sm"></span>Wire transfer</h3>
+      <div class="row ff-answers " id="bank-account-counter-int" >
+        <div  class="col-xs-11 col-xs-offset-1">
+          <div class="panel panel-info brdr-rds-0 mrgn-bttm-lg">
+            <header class="panel-heading">
+              <h4 class="panel-title">Counter (teller) service at bank or credit union outside of Canada </h4>
+            </header>
+            <div class="panel-body">
+              <p><span class="far fa-clock mrgn-rght-sm"></span><strong>Considered as paid:</strong> the <strong>same or next business day</strong></p>
+              <p><span class="h4">Learn how to pay:</span> <a class="stretched-link" href="wire-transfer.html">At a foreign bank or credit union</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   
+   
   <!--  <section id="offset-pymnt" class="ff-answers">
       <h3><span class="fas fa-redo-alt fa-fw mrgn-rght-sm"></span>Refund, benefit or credit (offset)</h3>
       <div class="panel panel-info brdr-rds-0 mrgn-bttm-lg">
