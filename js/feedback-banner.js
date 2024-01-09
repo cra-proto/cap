@@ -8,7 +8,7 @@ alphaBanner.insertAdjacentHTML('afterbegin', '<section class="experimental alpha
 //Renders search disabled
 $('#wb-srch-sub').attr("disabled", true);
 
-//Seperate script to null all canada.ca links to a 404 page (including GC menu) and redirect some in menu
+/*Separate script to null all canada.ca links to a 404 page (including GC menu) and redirect some in menu
 $( ".gcweb-menu" ).on( "wb-ready.gcweb-menu", function( event ) {
 	$("a[href='https://www.canada.ca/en/services/taxes.html']").attr("href", "https://cra-proto.github.io/cap/taxes.html").addClass("prototype");
 	$("a[href='https://www.canada.ca/en/services/taxes/income-tax.html']").attr("href", "https://cra-proto.github.io/cap/income-tax.html").addClass("prototype");
@@ -18,9 +18,9 @@ $( ".gcweb-menu" ).on( "wb-ready.gcweb-menu", function( event ) {
 	$("a[href*='.gc.ca/']").attr("href", "https://cra-proto.github.io/cap/404.html");
 });
 
-//Seperate script to null all canada.ca links to a 404 page
+Separate script to null all canada.ca links to a 404 page
 $(document).ready(function(){$("a[href*='canada.ca']").attr("href", "https://cra-proto.github.io/cap/404.html");});
 
-//Remove visited link design from 404 pages
+Remove visited link design from 404 pages
 var visited_link_styling = "<style> a[href='https://cra-proto.github.io/cap/404.html']:visited{ color:#284162; } </style>"; $('head').append( visited_link_styling );
-
+*/
