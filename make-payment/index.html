@@ -139,7 +139,7 @@
 	    <fieldset class="gc-chckbxrdio"><legend class="h5">Other situations</legend>
 <ul class="list-unstyled lst-spcd">
               <li class="checkbox gc-chckbxrdio"><input id="fastest-time" type="checkbox" class="wb-tagfilter-ctrl"  name="fastest-time" value="time__1day">
-              <label for="fastest-time">Received within 2 business days</label></li>
+              <label for="fastest-time">Considered paid within 1 to 2 business days</label></li>
 	<li class="checkbox gc-chckbxrdio"><input id="non-res" type="checkbox" class="wb-tagfilter-ctrl"  name="non-res" value="type__nonres">
               <label for="non-res">International payments</label></li>
 	<li class="checkbox gc-chckbxrdio"> <input id="multi-pay" type="checkbox" class="wb-tagfilter-ctrl" name="multi-pay" value="pay__multi">
@@ -197,14 +197,12 @@
                 </div>
               </div>
             </li>	  
-            <li data-wb-tags="ways__deposit ways__wire time__1day type__nonres">
+            <li data-wb-tags="ways__deposit ways__wire time__1day">
               <div class="panel panel-info brdr-rds-0">
                 <header class="panel-heading">
-                  <h2 class="panel-title mrgn-tp-sm mrgn-bttm-sm">Counter (teller) service at a bank or credit union </h2>
+                  <h2 class="panel-title mrgn-tp-sm mrgn-bttm-sm">Counter (teller) service at a bank or credit union in Canada</h2>
                 </header>
                 <div class="panel-body">
-			<div data-wb-tags="ways__deposit ways__wire time__1day">
-                  <h3 class="mrgn-tp-0">In Canada</h3>
 		  <p>You can make a payment to the CRA at any financial institution in Canada.</p>	
                   <p>Payments are made through a <strong>direct withdrawal from your savings or chequing account</strong>.</p>
                   <p><span class="fas fa-file-invoice fa-lg mrgn-rght-sm p-sm-3"></span>A <a href="remittance-voucher.html">remittance voucher</a> may be required.</p>
@@ -221,14 +219,17 @@
                   <p><span class="h4">Learn how to pay:</span> <a href="teller.html">At the counter (teller) of a bank or credit union</a></p>
                  <div class="mrgn-tp-lg mrgn-bttm-lg" data-ajax-replace="teller.html#processing-time">
 		</div>
+		</div>
+	      </div>
+	    </li>
 				
-				<!-- <ul class="fa-ul lst-spcd mrgn-tp-lg mrgn-bttm-lg">
-                    <li><span class="fa-li fa-lg"><span class="far fa-clock fa-fw"></span></span> <strong>Considered as paid:</strong> the <strong>same day</strong> it was paid (stamped by employee)</li>
-                      <li><span class="fa-li fa-lg"><span class="fas fa-cogs fa-fw"></span></span> <strong>Updated in your CRA account:</strong> usually within 2 to 3 business days</li>
-                  </ul>//-->
-				<hr class="brdr-bttm mrgn-bttm-lg">
-		  </div>
-                  <h3 class="mrgn-tp-0">Outside of Canada</h3>
+	<li data-wb-tags="ways__wire time__1day type__nonres">
+              <div class="panel panel-info brdr-rds-0">
+                <header class="panel-heading">
+                  <h2 class="panel-title mrgn-tp-sm mrgn-bttm-sm">Wire transfer at a foreign bank or credit union </h2>
+                </header>
+                <div class="panel-body">
+
 		<p>Banks and credit unions outside of Canada may be able to <strong>wire transfer</strong> a payment to the CRA.</p>	
                   <p><span class="fas fa-file-invoice fa-lg mrgn-rght-sm p-sm-3"></span>A <a href="remittance-voucher.html">remittance voucher</a> may be required.</p>
                  <details class="mrgn-bttm-lg"><summary>Payments we <strong>do</strong> and <strong>do not</strong> accept with counter service at a bank or credit union outside of Canada</summary>
@@ -244,10 +245,7 @@
                   <p><span class="h4">Learn how to pay:</span> <a href="wire-transfer.html">At a foreign bank or credit union</a></p>
  <div class="mrgn-tp-lg mrgn-bttm-lg" data-ajax-replace="wire-transfer.html#processing-time">
 		</div>
-			<!--<ul class="fa-ul lst-spcd mrgn-tp-lg mrgn-bttm-lg">
-                    <li><span class="fa-li fa-lg"><span class="far fa-clock fa-fw"></span></span> <strong>Considered as paid:</strong> the <strong>same or next business day</strong></li>
-                      <li><span class="fa-li fa-lg"><span class="fas fa-cogs fa-fw"></span></span> <strong>Updated in your CRA account:</strong>  usually 3 business days after the payment is received</li>
-                  </ul>//-->
+			
                 </div>
               </div>
             </li>
