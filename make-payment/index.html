@@ -160,7 +160,9 @@
           </div>
         </details>
       </div>
-      <div class="col-md-8 wb-tagfilter provisional wb-filter" id="filteredFAQ"  data-wb-filter='{
+      <div class="col-md-8">
+	      
+	      <div class="wb-tagfilter provisional wb-filter" id="filteredFAQ"  data-wb-filter='{
 		"selector": ".events-list>li",
 		"section": ".wb-tagfilter-items",
 		"uiTemplate": "#searchFilter"
@@ -365,8 +367,14 @@
           <div class="alert alert-warning">
             <h2 class="h3">No options available</h2>
             <p>Based on your filter selections, there are no options available.  Please select fewer filter options, or <a href="">reset the page</a>.</p>
-            <div id="not-accepted">
-              <h2 class="h3">The CRA never accepts certain payment methods</h2>
+            
+          </div>
+        </div>
+      </div>
+	          <div class="alert alert-warning">
+<details><summary>The CRA never accepts certain payment methods</summary>
+		 <div id="not-accepted">	  
+            
               <p>The CRA never accepts payments by:</p>
               <ul class="fa-ul mrgn-lft-xl">
                 <li><span class="fa-li"><span class="fa-stack fa-sm"><span class="fab fa-btc fa-fw fa-stack-1x"></span> <span class="fas fa-ban fa-stack-2x text-danger opct-70"></span></span></span>
@@ -388,8 +396,8 @@
               </ul>
               <p class="mrgn-tp-lg">Take steps on how to <a href="https://www.canada.ca/en/revenue-agency/corporate/security/protect-yourself-against-fraud.html">avoid CRA scams</a>.</p>
             </div>
+</details>
           </div>
-        </div>
       </div>
     </div>
   </section>
