@@ -75,10 +75,10 @@
                     <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, #instal-alert, #instal-indv, .third-party-alert", "class": "hidden", "live": true}, {"action": "addClass", "source": "#bank-account-atm,#debit-card-cra,#debit-card-canadapost,#wire-transfer-pymnt,#cash-pymnt", "class": "hidden", "live": true}]'>Multiple scheduled payments</li>
                   </ul>
                 </div>
-              </li>
+           </li>
             </ul>
           </div>
-        </li>
+     </li>
         <li>Corporate income tax (T2)
           <div class="wb-fieldflow-sub" data-wb-fieldflow='{"noForm": true, "isoptional": true, "renderas": "radio", "gcChckbxrdio":true, "reset": [{ "action": "addClass", "source":"#ff-results, .alert-hide-reset", "class": "hidden"}, { "action": "removeClass", "source":".ff-answers", "class": "hidden"}]}'>
             <p>What is the corporate income tax payment for?</p>
@@ -92,10 +92,10 @@
                     <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, #instal-alert, #instal-corp, .third-party-alert", "class": "hidden", "live": true}, {"action": "addClass", "source": "#bank-account-atm,#debit-card-cra,#debit-card-canadapost,#wire-transfer-pymnt,#cash-pymnt", "class": "hidden", "live": true}]'>Multiple scheduled payments</li>
                   </ul>
                 </div>
-              </li>
+           </li>
             </ul>
           </div>
-        </li>
+     </li>
         <li>GST/HST remittance
           <div class="wb-fieldflow-sub" data-wb-fieldflow='{"noForm": true, "isoptional": true, "renderas": "radio", "gcChckbxrdio":true, "reset": [{ "action": "addClass", "source":"#ff-results, .alert-hide-reset", "class": "hidden"}, { "action": "removeClass", "source":".ff-answers", "class": "hidden"}]}'>
             <p>What is the GST/HST payment for?</p>
@@ -109,10 +109,10 @@
                     <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, #instal-alert, #instal-gst, .third-party-alert", "class": "hidden", "live": true}, {"action": "addClass", "source": "#bank-account-atm,#debit-card-cra,#debit-card-canadapost,#wire-transfer-pymnt,#cash-pymnt", "class": "hidden", "live": true}]'>Multiple scheduled payments</li>
                   </ul>
                 </div>
-              </li>
+           </li>
             </ul>
           </div>
-        </li>
+     </li>
         <li>Payroll source deductions
           <div class="wb-fieldflow-sub" data-wb-fieldflow='{"noForm": true, "isoptional": true, "renderas": "radio", "gcChckbxrdio":true, "reset": [{ "action": "addClass", "source":"#ff-results, .alert-hide-reset", "class": "hidden"}, { "action": "removeClass", "source":".ff-answers", "class": "hidden"}]}'>
             <p>What is the payroll source deduction payment for?</p>
@@ -120,7 +120,7 @@
               <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results", "class": "hidden", "live": true}]'>An amount due or a balance owing from an assessment</li>
             </ul>
           </div>
-        </li>
+     </li>
         <li>Other benefit, tax, fee or amount owing
           <div class="wb-fieldflow-sub" data-wb-fieldflow='{"noForm": true, "isoptional": true, "renderas": "radio", "gcChckbxrdio":true, "reset": [{ "action": "addClass", "source":"#ff-results, .alert-hide-reset", "class": "hidden"}, { "action": "removeClass", "source":".ff-answers", "class": "hidden"}]}'>
             <div class="wb-fieldflow-header">
@@ -167,11 +167,12 @@
                           <p class="wb-fieldflow-label">What type of payment (or repayment) is being made?</p>
                         </div>
                         <ul>
+				<li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert, #nomulti-alert, #benefit-alert", "class": "hidden", "live": true}, {"action": "addClass", "source": "#bank-account-cra", "class": "hidden", "live": true}]'>Advanced Canada Workers Benefit</li>
                           <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert, #benefit-alert", "class": "hidden", "live": true}]'>Canada Child Benefit (CCB)</li>
-				 <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert, #nomulti-alert, #benefit-alert", "class": "hidden", "live": true}]'>Canada dental benefit</li>
-				<li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert, #nomulti-alert, #benefit-alert", "class": "hidden", "live": true}]'>Canada Carbon Rebate (CCR)/Climate Action Incentive (CAI)</li>
+				 <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert, #benefit-alert", "class": "hidden", "live": true}]'>Canada dental benefit</li>
+				<li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert, #nomulti-alert, #benefit-alert", "class": "hidden", "live": true}, {"action": "addClass", "source": "#bank-account-cra", "class": "hidden", "live": true}]'>Canada Carbon Rebate (CCR)/Climate Action Incentive (CAI)</li>
 				<li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert, #covid-alert, #covid-pa-indv", "class": "hidden", "live": true}]'>COVID-19 individual benefits</li>
-				 <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results", "class": "hidden", "live": true}, {"action": "addClass", "source": "#bank-account-counter-cdn, #bank-account-cra, #debit-card-cra, #collections-alert", "class": "hidden", "live": true}]'>Garnishment on behelf of a worker</li>
+				 <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results. third-party-alert, #nomulti-alert", "class": "hidden", "live": true}, {"action": "addClass", "source": "#bank-account-counter-cdn, #bank-account-cra, #debit-card-cra, #collections-alert", "class": "hidden", "live": true}]'>Garnishment on behelf of a worker</li>
                                       <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert, #benefit-alert", "class": "hidden", "live": true}]'>GST/HST credit</li>
 				<li>Non-resident tax
                             <div class="wb-fieldflow-sub"  data-wb-fieldflow='{"noForm": true, "isoptional": true, "renderas": "radio", "gcChckbxrdio":true, "reset": [{ "action": "addClass", "source":"#ff-results, .alert-hide-reset", "class": "hidden"}, { "action": "removeClass", "source":".ff-answers", "class": "hidden"}]}'>
@@ -181,63 +182,61 @@
                                 <li data-wb-fieldflow='{"action": "removeClass", "source": "#answer-nonres-indv-unsure", "class": "hidden", "live": true}'>Other/Unsure</li>
                               </ul>
                             </div>
-                          </li>
-				<li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert, #nomulti-alert", "class": "hidden", "live": true}]'>One time top-up to Canada housing benefit</li>
+                       </li>
+				<li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert", "class": "hidden", "live": true}]'>One time top-up to Canada housing benefit</li>
 				 <li>Provincial credits
                             <div class="wb-fieldflow-sub"  data-wb-fieldflow='{"noForm": true, "isoptional": true, "renderas": "radio", "gcChckbxrdio":true, "reset": [{ "action": "addClass", "source":"#ff-results, .alert-hide-reset", "class": "hidden"}, { "action": "removeClass", "source":".ff-answers", "class": "hidden"}]}'>
                               <p>Provincial credit payment for:</p>
                               <ul>
                                 <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert, #benefit-alert", "class": "hidden", "live": true}]'>Alberta credits</li>
                                 <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert, #benefit-alert", "class": "hidden", "live": true}]'>Ontario credits</li>
-				       <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert", "class": "hidden", "live": true}, {"action": "addClass", "source": "#bank-account-cra", "class": "hidden", "live": true}]'>Nunavut Carbon Credit</li>
+				       <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert, #nomulti-alert", "class": "hidden", "live": true}, {"action": "addClass", "source": "#bank-account-cra", "class": "hidden", "live": true}]'>Nunavut Carbon Credit</li>
                                 <li data-wb-fieldflow='{"action": "removeClass", "source": "#answer-outside-unsure", "class": "hidden", "live": true}'>All other provinces</li>
                               </ul>
                             </div>
-                          </li>
-				 <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert, #nomulti-alert", "class": "hidden", "live": true}, {"action": "addClass", "source": "#bank-account-online, #bank-account-counter-cdn, #bank-account-atm", "class": "hidden", "live": true}]'>Tax Free Savings Account (TFSA)</li>
-                          <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert, #nomulti-alert", "class": "hidden", "live": true}]'>Underused Housing Tax </li>
+                       </li>
+				 <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert", "class": "hidden", "live": true}, {"action": "addClass", "source": "#bank-account-online, #bank-account-counter-cdn, #bank-account-atm", "class": "hidden", "live": true}]'>Tax Free Savings Account (TFSA)</li>
+                          <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert", "class": "hidden", "live": true}]'>Underused Housing Tax</li>
 				<li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert, #benefit-alert", "class": "hidden", "live": true}]'>Universal Child Care Benefit (UCCB)</li>
                           <li data-wb-fieldflow='{"action": "removeClass", "source": "#answer-outside-unsure", "class": "hidden", "live": true}'>None of the above</li>
                         </ul>
                       </div>
-                    </li>
+                 </li>
                     <li>A business or corporation
                       <div class="wb-fieldflow-sub"  data-wb-fieldflow='{"noForm": true, "isoptional": true, "renderas": "radio", "gcChckbxrdio":true, "reset": [{ "action": "addClass", "source":"#ff-results, .alert-hide-reset", "class": "hidden"}, { "action": "removeClass", "source":".ff-answers", "class": "hidden"}]}'>
                         <div class="wb-fieldflow-header">
                           <p class="wb-fieldflow-label">What type of payment (or repayment) is being made?</p>
                         </div>
                         <ul>
-				<li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert", "class": "hidden", "live": true}, {"action": "addClass", "source": "#wire-transfer-pymnt", "class": "hidden", "live": true}]'>Air travellers Security Charge </li>
+				<li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert", "class": "hidden", "live": true}]'>Air travellers Security Charge</li>
 				 <li>COVID-19 wage or rent subsidy
                             <div class="wb-fieldflow-sub"  data-wb-fieldflow='{"noForm": true, "isoptional": true, "renderas": "radio", "gcChckbxrdio":true, "reset": [{ "action": "addClass", "source":"#ff-results, .alert-hide-reset", "class": "hidden"}, { "action": "removeClass", "source":".ff-answers", "class": "hidden"}]}'>
                               <p>Is the payment for CEWS?</p>
                               <ul>
-                                <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert", "class": "hidden", "live": true}, {"action": "addClass", "source": "#wire-transfer", "class": "hidden", "live": true}]'>Yes</li>
-                                <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert, #covid-alert, #covid-pa-busn", "class": "hidden", "live": true}, {"action": "addClass", "source": "#wire-transfer", "class": "hidden", "live": true}]'>No</li>
+                                <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert", "class": "hidden", "live": true}]'>Yes</li>
+                                <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert, #covid-alert, #covid-pa-busn", "class": "hidden", "live": true}]'>No</li>
                               </ul>
                             </div>
-                          </li>
-				<li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert", "class": "hidden", "live": true}, {"action": "addClass", "source": "#wire-transfer-pymnt", "class": "hidden", "live": true}]'>Excise duties</li>
-                          <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert", "class": "hidden", "live": true}, {"action": "addClass", "source": "#wire-transfer-pymnt", "class": "hidden", "live": true}]'>Excise tax (including Insurance premiums) </li>
-                           <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert", "class": "hidden", "live": true}]'>Fuel charge </li>
-				 <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results", "class": "hidden", "live": true}, {"action": "addClass", "source": "#bank-account-pymnt, #bank-account-cra, #credit-card-pymt, #debit-card-pymnt, #wire-transfer-pymnt, #online-transfer-pymnt, #cash-pymnt, #collections-alert", "class": "hidden", "live": true}]'>Garnishment on behalf of a worker</li>
-				<li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert, #nomulti-alert", "class": "hidden", "live": true}]'>Information Return (RZ) penalty</li>
+                       </li>
+				<li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert", "class": "hidden", "live": true}]'>Excise duties</li>
+                          <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert", "class": "hidden", "live": true}]'>Excise tax (including Insurance premiums)</li>
+                           <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert", "class": "hidden", "live": true}]'>Fuel charge</li>
+			   <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert, #nomulti-alert", "class": "hidden", "live": true}, {"action": "addClass", "source": "#bank-account-counter-cdn, #bank-account-cra, #debit-card-cra, #collections-alert", "class": "hidden", "live": true}]'>Garnishment on behelf of a worker</li>
+				<li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert, #nomulti-alert", "class": "hidden", "live": true}, {"action": "addClass", "source": "#bank-account-cra, #bank-account-atm", "class": "hidden", "live": true}]'>Information Return (RZ) penalty</li>
                           
                          
-                          <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert, #nomulti-alert", "class": "hidden", "live": true}]'>Luxury tax </li>
+                          <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert", "class": "hidden", "live": true}]'>Luxury tax</li>
                                <li>Non-resident tax
                             <div class="wb-fieldflow-sub"  data-wb-fieldflow='{"noForm": true, "isoptional": true, "renderas": "radio", "gcChckbxrdio":true, "reset": [{ "action": "addClass", "source":"#ff-results, .alert-hide-reset", "class": "hidden"}, { "action": "removeClass", "source":".ff-answers", "class": "hidden"}]}'>
                               <p>What type of non-resident business or corporate payment are you making?</p>
                               <ul>
-                                <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert", "class": "hidden", "live": true}]'>Amount owing for corporate income tax return (T2)</li>
-                                <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results", "class": "hidden", "live": true}, {"action": "addClass", "source": "#bank-account-pymnt, #bank-account-cra, #credit-card-pymt, #debit-card-pymnt, #wire-transfer-pymnt, #online-transfer-pymnt, #cash-pymnt, #collections-alert", "class": "hidden", "live": true}]'>Part IX (nine) GST/HST security deposit</li>
-                                <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert", "class": "hidden", "live": true}, {"action": "addClass", "source": "#bank-account-atm, #debit-card-canadapost", "class": "hidden", "live": true}]'>Part XIII (thirteen) withholding tax</li>
-                                <li data-wb-fieldflow='{"action": "removeClass", "source": "#answer-nonres-corp-unsure", "class": "hidden", "live": true}'>Unsure</li>
+                                <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert", "class": "hidden", "live": true}]'>Part XIII (thirteen) withholding tax</li>
+                                <li data-wb-fieldflow='{"action": "removeClass", "source": "#answer-nonres-corp-unsure", "class": "hidden", "live": true}'>Other/Unsure</li>
                               </ul>
                             </div>
-                          </li>
-                          <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert, #nomulti-alert", "class": "hidden", "live": true}, {"action": "addClass", "source": "#wire-transfer-pymnt", "class": "hidden", "live": true}]'>Softwood lumber products export charge </li>
-                            <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert, #nomulti-alert", "class": "hidden", "live": true}, {"action": "addClass", "source": "#bank-account-atm, #bank-account-online", "class": "hidden", "live": true}]'>Underused housing tax </li>
+                       </li>
+                          <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert", "class": "hidden", "live": true}, {"action": "addClass", "source": "#debit-card-canadapost, #cash-pymnt", "class": "hidden", "live": true}]'>Softwood lumber products export charge</li>
+                            <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert", "class": "hidden", "live": true}]'>Underused Housing Tax</li>
 				<li>Workers  premiums
                             <div class="wb-fieldflow-sub"  data-wb-fieldflow='{"noForm": true, "isoptional": true, "renderas": "radio", "gcChckbxrdio":true, "reset": [{ "action": "addClass", "source":"#ff-results, .alert-hide-reset", "class": "hidden"}, { "action": "removeClass", "source":".ff-answers", "class": "hidden"}]}'>
                               <p>Workers board premiums for:</p>
@@ -246,7 +245,7 @@
                                 <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results", "class": "hidden", "live": true}, {"action": "addClass", "source": "#bank-account-counter-cdn, #bank-account-counter-int, #bank-account-atm, #bank-account-online, #credit-card-pymt, #debit-card-pymnt, #wire-transfer-pymnt, #cheque-pymnt, #online-transfer-pymnt, #cash-pymnt, #collections-alert", "class": "hidden", "live": true}]'>Workplace Safety and Insurance Board for Ontario</li>
                               </ul>
                             </div>
-                          </li>
+                       </li>
                         
                          
                          
@@ -254,7 +253,7 @@
                           <li data-wb-fieldflow='{"action": "removeClass", "source": "#answer-outside-unsure", "class": "hidden", "live": true}'>None of the above</li>
                         </ul>
                       </div>
-                    </li>
+                 </li>
                     <li>A charity
                       <div class="wb-fieldflow-sub"  data-wb-fieldflow='{"noForm": true, "isoptional": true, "renderas": "radio", "gcChckbxrdio":true, "reset": [{ "action": "addClass", "source":"#ff-results, .alert-hide-reset", "class": "hidden"}, { "action": "removeClass", "source":".ff-answers", "class": "hidden"}]}'>
                         <p>What type of charity payment are you making?</p>
@@ -263,17 +262,17 @@
                          <!-- <li>Penalty on a charity</li>//-->
                         </ul>
                       </div>
-                    </li>
+                 </li>
                     <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert, #nomulti-alert", "class": "hidden", "live": true}]'>A trust (T3)</li>
                     <li data-wb-fieldflow='{"action": "removeClass", "source": "#answer-outside-unsure", "class": "hidden", "live": true}'>Unsure</li>
                   </ul>
                 </div>
-              </li>
+           </li>
               <li data-wb-fieldflow='{"action": "removeClass", "source": "#answer-outside-payment", "class": "hidden", "live": true}'>No</li>
               <li data-wb-fieldflow='{"action": "removeClass", "source": "#answer-outside-unsure", "class": "hidden", "live": true}'>Unsure</li>
             </ul>
           </div>
-        </li>
+     </li>
       </ul>
     </div>
   </form>
@@ -298,20 +297,20 @@
                   <li>If your financial institution requires 11 characters, add the letters "YY" or the numbers "00" at the end on your entry</li>
                 </ol>
               </details>
-            </li>
+         </li>
             <li>
               <details>
                 <summary>By mail</summary>
                 <p>If you're unable to make your payments online, you may pay by sending a cheque.</p>
                 <ol>
-                  <li>Make your cheque payable to "Receiver General for Canada" </li>
+                  <li>Make your cheque payable to "Receiver General for Canada"</li>
                   <li>Write your client ID number on the front of your cheque</li>
                   <li>Include your  slip with your payment – do not staple</li>
                   <li>Mail your payment to the <a href="https://canada.ca/en/employment-social-development/programs/ei/ei-list/overpayments/repayments.html#offices">payment office</a> indicated on the back of your statement of account</li>
                 </ol>
                 <p><strong>Do not send cash</strong> by mail.</p>
               </details>
-            </li>
+         </li>
             <li>
               <details>
                 <summary>For non-residents</summary>
@@ -329,7 +328,7 @@
                       <li>Client identification number from  slip, invoice and/or statement of account</li>
                       <li>Other information to indicate the intent of the payment (Program: CPP, EI, OAS, etc.)</li>
                     </ul>
-                  </li>
+               </li>
                 </ul>
                 <p class="h5">Electronic funds transfer</p>
                 <p>The debtor will assume the cost of conversion and responsibility for any fees that can't be deducted from the amount.</p>
@@ -343,15 +342,15 @@
                         Montreal, Quebec, Canada<br>
                         H5B 1B3</li>
                     </ul>
-                  </li>
+               </li>
                   <li>Bank number: 815</li>
                   <li>Transit number: 98000</li>
                   <li>Beneficiary name: 014-25623 - ESDC (Receiver General for Canada)</li>
                 </ul>
               </details>
-            </li>
+         </li>
           </ul>
-        </li>
+     </li>
         <li><strong>For CBSA:</strong>
           <ul class="list-unstyled">
             <li>
@@ -372,12 +371,12 @@
                 <p>You can pay by debit or credit card for amounts <strong>less than $5,000</strong>.</p>
                 <p>The <abbr title="Canada Border Services Agency">CBSA</abbr> <strong>does not accept  wire transfers</strong> as forms of payment.</p>
               </details>
-            </li>
+         </li>
             <li>
               <details>
                 <summary>By mail</summary>
                 <ol>
-                  <li>Make the cheque payable to the "Receiver General for Canada" </li>
+                  <li>Make the cheque payable to the "Receiver General for Canada"</li>
                   <li>Write your business account number or your Importer number on the front of your cheque</li>
                   <li>To direct a payment, write the invoice number on the cheque or include a list of invoices with your payment – do not staple any documents to your cheque</li>
                   <li>Mail your payment to:
@@ -389,19 +388,19 @@
                         Ottawa, Ontario K1A 0L8</li>
                       <li>Telephone: 343-291-5265 (for courier reference)</li>
                     </ul>
-                  </li>
+               </li>
                 </ol>
                 <p>The <abbr title="Canada Border Services Agency">CBSA</abbr> <strong>does not accept cash or travellers cheques</strong></p>
               </details>
-            </li>
+         </li>
             <li>
               <details>
                 <summary>In person</summary>
                 <p>Pay at your financial institution</p>
               </details>
-            </li>
+         </li>
           </ul>
-        </li>
+     </li>
       </ul>
     </div>
   </div>
