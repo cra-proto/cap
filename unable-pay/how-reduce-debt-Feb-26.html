@@ -104,11 +104,6 @@
                       <input type="radio" name="ways" class="wb-tagfilter-ctrl" value="debt__loan">
                       Canada Student Loan and Canada Apprentice Loan </label>
                   </li>
-                  <li class="radio">
-                    <label>
-                      <input type="radio" name="ways" class="wb-tagfilter-ctrl" value="debt__edsc">
-                      Employment and Social Development Canada debts and overpayments </label>
-                  </li>
 			                  <li class="radio">
                     <label>
                       <input type="radio" name="ways" class="wb-tagfilter-ctrl" value="debt__covid">
@@ -118,6 +113,11 @@
                     <label>
                       <input type="radio" name="ways" class="wb-tagfilter-ctrl" value="debt__benefits">
                       Benefits paid by the CRA </label>
+                  </li>
+			                  <li class="radio">
+                    <label>
+                      <input type="radio" name="ways" class="wb-tagfilter-ctrl" value="debt__edsc">
+                      Employment and Social Development Canada debts and overpayments </label>
                   </li>
                   <li class="radio">
                     <label>
@@ -141,7 +141,7 @@
         </div>
         <div class="wb-tagfilter-items">
           <ul class="list-unstyled events-list ">
-            <li data-wb-tags="debt__personal debt__corporate debt__gst debt__customs debt__benefit">
+            <li data-wb-tags="debt__personal debt__corporate debt__gst debt__customs debt__benefit debt__covid">
               <div class="panel panel-info brdr-rds-0">
                 <header class="panel-heading">
                   <h3 class="panel-title mrgn-tp-sm mrgn-bttm-sm">Cancel or waive interest or penalties</h3>
@@ -165,7 +165,7 @@
                       <h4 class="h5 text-muted">EI overpayments<span class="wb-inv">: Option 2 of 3</span></h4>
                       <p>Financial hardship provision:
 			      <ul><li>For penalties, <a href="https://www.canada.ca/en/employment-social-development/corporate/contact/ei-individual.html">contact ESDC</a></li>
-		  <li>For interest, contact the CRA at 1-800-661-5991</li></ul></p>
+		  <li>For interest, contact the CRA at <span class="nowrap small">1-800-661-5991</span></li></ul></p>
                     </li>
                     <li class="cnjnctn-col">
                       <h4 class="h5 text-muted">Customs duties<span class="wb-inv">: Option 3 of 3</span></h4>
@@ -198,7 +198,7 @@
                 </div>
               </div>
             </li>
-            <li data-wb-tags="debt__personal debt__corporate debt__benefit">
+            <li data-wb-tags="debt__personal debt__corporate">
               <div class="panel panel-info brdr-rds-0">
                 <header class="panel-heading">
                   <h3 class="panel-title mrgn-tp-sm mrgn-bttm-sm">Change a tax return</h3>
@@ -232,7 +232,7 @@
               </div>
             </li>
 
-            <li data-wb-tags="debt__personal debt__corporate debt__gst debt__benefit">
+            <li data-wb-tags="debt__personal debt__corporate debt__gst debt__benefit debt__covid">
               <div class="panel panel-info brdr-rds-0">
                 <header class="panel-heading">
                   <h3 class="panel-title mrgn-tp-sm mrgn-bttm-sm">Request remission</h3>
@@ -250,7 +250,7 @@
                 </div>
               </div>
             </li>
-            <li data-wb-tags="debt__personal debt__corporate debt__gst debt__benefit debt__customs">
+            <li data-wb-tags="debt__personal debt__corporate debt__gst debt__benefit debt__customs debt__covid debt__esdc">
               <div class="panel panel-info brdr-rds-0">
                 <header class="panel-heading">
                   <h3 class="panel-title mrgn-tp-sm mrgn-bttm-sm">Insolvency or bankruptcy</h3>
@@ -261,8 +261,8 @@
                   <ul class="mrgn-tp-md mrgn-bttm-lg colcount-md-2">
                     <li>CRA taxes</li>
                     <li>Business GST/HST and payroll</li>
-			  <p>COVID-19 business subsidies</p>
-			  <p>Benefits paid by the CRA</p>
+			  <li>COVID-19 business subsidies</li>
+			  <li>Benefits paid by the CRA</li>
                     <li>Employment and Social Development Canada debts and overpayments</li>
                     <li>Customs duties</li>
                   </ul>
