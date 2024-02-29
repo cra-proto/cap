@@ -124,11 +124,11 @@
         <li>Other benefit, tax, fee or amount owing
           <div class="wb-fieldflow-sub" data-wb-fieldflow='{"noForm": true, "isoptional": true, "renderas": "radio", "gcChckbxrdio":true, "reset": [{ "action": "addClass", "source":"#ff-results, .alert-hide-reset", "class": "hidden"}, { "action": "removeClass", "source":".ff-answers", "class": "hidden"}]}'>
             <div class="wb-fieldflow-header">
-              <p class="wb-fieldflow-label">Should you make the payment to the CRA?</p>
+              <p class="wb-fieldflow-label"><span id="paymentToCRA" aria-labelledby="paymentToCRA paymentNotCRA">Should you make the payment to the CRA?</span></p>
               <div class="gc-font-2019">
                  <details>
 		<summary>Payments the CRA does <strong>not</strong> accept</summary>	
-			                   <p>The CRA does not accept all payments for other government departments. If you're making a payment for an item in this list, select <strong>no</strong>.</p>
+			            <div id="paymentNotCRA">       <p>The CRA does not accept all payments for other government departments. If you're making a payment for an item in this list, select <strong>no</strong>.</p>
                   <h2 class="h3 mrgn-tp-sm">Employment and Social Development Canada (ESDC)</h2>
                   <p>Amounts that should be repaid to ESDC include:</p>
                   <ul>
@@ -152,7 +152,7 @@
                   <ul>
                     <li>Customs imports</li>
                   </ul>
-               
+				    </div>
                 </details>
               </div>
             </div>
@@ -172,7 +172,7 @@
 				 <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert, #benefit-alert", "class": "hidden", "live": true}]'>Canada dental benefit</li>
 				<li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert, #nomulti-alert, #benefit-alert", "class": "hidden", "live": true}, {"action": "addClass", "source": "#bank-account-cra", "class": "hidden", "live": true}]'>Canada Carbon Rebate (CCR)/Climate Action Incentive (CAI)</li>
 				<li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert, #covid-alert, #covid-pa-indv", "class": "hidden", "live": true}]'>COVID-19 individual benefits</li>
-				 <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results. third-party-alert, #nomulti-alert", "class": "hidden", "live": true}, {"action": "addClass", "source": "#bank-account-counter-cdn, #bank-account-cra, #debit-card-cra, #collections-alert", "class": "hidden", "live": true}]'>Garnishment on behelf of a worker</li>
+				 <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert, #nomulti-alert", "class": "hidden", "live": true}, {"action": "addClass", "source": "#bank-account-counter-cdn, #bank-account-cra, #debit-card-cra, #collections-alert", "class": "hidden", "live": true}]'>Garnishment on behelf of a worker</li>
                                       <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert, #benefit-alert", "class": "hidden", "live": true}]'>GST/HST credit</li>
 				<li>Non-resident tax
                             <div class="wb-fieldflow-sub"  data-wb-fieldflow='{"noForm": true, "isoptional": true, "renderas": "radio", "gcChckbxrdio":true, "reset": [{ "action": "addClass", "source":"#ff-results, .alert-hide-reset", "class": "hidden"}, { "action": "removeClass", "source":".ff-answers", "class": "hidden"}]}'>
@@ -280,7 +280,7 @@
   <!--alerts //-->
   <div id="answer-outside-payment" class="alert-hide-reset hidden">
     <div class="alert alert-info">
-      <h2 class="h3"><small>Your result is:</small><br>
+      <h2 class="h3" tabindex="0"><small>Your result is:</small><br>
         You need to send your payment to the correct department or agency</h2>
       <p>Other areas you may have received a payment from:</p>
       <ul class="list-unstyled">
@@ -296,7 +296,7 @@
   </div>
   <div id="answer-outside-unsure" class="alert-hide-reset hidden">
     <div class="alert alert-info">
-      <h2 class="h3"><small>Your result is:</small><br>
+      <h2 class="h3" tabindex="0"><small>Your result is:</small><br>
         You may need to contact the CRA</h2>
 
       <p>Call the benefits line to determine where to send your payment.</p>
@@ -307,7 +307,7 @@
   </div>
   <div id="answer-nonres-indv-unsure" class="alert-hide-reset hidden">
     <div class="alert alert-info">
-      <h2 class="h3"><small>Your result is:</small><br>
+      <h2 class="h3" tabindex="0"><small>Your result is:</small><br>
         You may need to contact the CRA</h2>
       <p>Call the non-resident individual phone line to determine where to send your payment.</p>
       <ul class="list-unstyled" data-ajax-replace="https://www.canada.ca/en/revenue-agency/corporate/contact-information.html#int-ph-01">
@@ -317,7 +317,7 @@
   </div>
   <div id="answer-nonres-corp-unsure" class="alert-hide-reset hidden">
     <div class="alert alert-info">
-      <h2 class="h3"><small>Your result is:</small><br>
+      <h2 class="h3" tabindex="0"><small>Your result is:</small><br>
         You may need to contact the CRA</h2>
       <p>Call the non-resident business and corporation phone line to determine where to send your payment.</p>
       <ul class="list-unstyled" data-ajax-replace="https://www.canada.ca/en/revenue-agency/corporate/contact-information.html#int-ph-02">
@@ -326,7 +326,7 @@
     </div>
   </div>
   <div id="ff-results" class="hidden">
-    <h2>Your results</h2>
+    <h2 tabindex="0">Your results</h2>
     <!--Payment alerts //-->
     <section>
       <div class="alert alert-info alert-hide-reset hidden" id="instal-alert">
