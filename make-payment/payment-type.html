@@ -72,7 +72,7 @@
                   <p>How many instalment payments would you like to make?</p>
                   <ul>
                     <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, #instal-alert, #instal-indv, .third-party-alert", "class": "hidden", "live": true}]'>One instalment payment</li>
-                    <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, #instal-alert, #instal-indv, .third-party-alert", "class": "hidden", "live": true}, {"action": "addClass", "source": "#bank-account-atm,#debit-card-cra,#debit-card-canadapost,#wire-transfer-pymnt,#cash-pymnt", "class": "hidden", "live": true}]'>Multiple scheduled payments</li>
+                    <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, #instal-alert, #instal-indv, .third-party-alert", "class": "hidden", "live": true}, {"action": "addClass", "source": "#bank-account-atm,#debit-card-cra,#debit-card-canadapost,#wire-transfer-pymnt,#bank-account-counter-int,#cash-pymnt", "class": "hidden", "live": true}]'>Multiple scheduled payments</li>
                   </ul>
                 </div>
            </li>
@@ -89,7 +89,7 @@
                   <p>How many corporate instalment payments would you like to make?</p>
                   <ul>
                     <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, #instal-alert, #instal-corp, .third-party-alert", "class": "hidden", "live": true}]'>One instalment payment</li>
-                    <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, #instal-alert, #instal-corp, .third-party-alert", "class": "hidden", "live": true}, {"action": "addClass", "source": "#bank-account-atm,#debit-card-cra,#debit-card-canadapost,#wire-transfer-pymnt,#cash-pymnt", "class": "hidden", "live": true}]'>Multiple scheduled payments</li>
+                    <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, #instal-alert, #instal-corp, .third-party-alert", "class": "hidden", "live": true}, {"action": "addClass", "source": "#bank-account-atm,#debit-card-cra,#debit-card-canadapost,#wire-transfer-pymnt,#bank-account-counter-int, #cash-pymnt", "class": "hidden", "live": true}]'>Multiple scheduled payments</li>
                   </ul>
                 </div>
            </li>
@@ -106,7 +106,7 @@
                   <p>How many GST/HST instalment payments would you like to make?</p>
                   <ul>
                     <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, #instal-alert, #instal-gst", "class": "hidden", "live": true}]'>One instalment payment</li>
-                    <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, #instal-alert, #instal-gst, .third-party-alert", "class": "hidden", "live": true}, {"action": "addClass", "source": "#bank-account-atm,#debit-card-cra,#debit-card-canadapost,#wire-transfer-pymnt,#cash-pymnt", "class": "hidden", "live": true}]'>Multiple scheduled payments</li>
+                    <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, #instal-alert, #instal-gst, .third-party-alert", "class": "hidden", "live": true}, {"action": "addClass", "source": "#bank-account-atm,#debit-card-cra,#debit-card-canadapost,#wire-transfer-pymnt,#bank-account-counter-int,#cash-pymnt", "class": "hidden", "live": true}]'>Multiple scheduled payments</li>
                   </ul>
                 </div>
            </li>
@@ -124,7 +124,7 @@
         <li>Other benefit, tax, fee or amount owing
           <div class="wb-fieldflow-sub" data-wb-fieldflow='{"noForm": true, "isoptional": true, "renderas": "radio", "gcChckbxrdio":true, "reset": [{ "action": "addClass", "source":"#ff-results, .alert-hide-reset", "class": "hidden"}, { "action": "removeClass", "source":".ff-answers", "class": "hidden"}]}'>
             <div class="wb-fieldflow-header">
-              <p class="wb-fieldflow-label"><span id="paymentToCRA" aria-labelledby="paymentToCRA paymentNotCRA">Should you make the payment to the CRA?</span></p>
+              <p class="wb-fieldflow-label"><span id="paymentToCRA" aria-describedby="paymentToCRA paymentNotCRA">Should you make the payment to the CRA?</span></p>
               <div class="gc-font-2019">
                  <details>
 		<summary>Payments the CRA does <strong>not</strong> accept</summary>	
@@ -242,7 +242,7 @@
                               <p>Workers board premiums for:</p>
                               <ul>
                                 <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert", "class": "hidden", "live": true}]'>Nova Scotia Workers' Compensation Board</li>
-                                <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results", "class": "hidden", "live": true}, {"action": "addClass", "source": "#bank-account-counter-cdn, #bank-account-counter-int, #bank-account-atm, #bank-account-online, #credit-card-pymt, #debit-card-pymnt, #wire-transfer-pymnt, #cheque-pymnt, #online-transfer-pymnt, #cash-pymnt, #collections-alert", "class": "hidden", "live": true}]'>Workplace Safety and Insurance Board for Ontario</li>
+                                <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results", "class": "hidden", "live": true}, {"action": "addClass", "source": "#bank-account-counter-cdn, #bank-account-counter-int, #bank-account-atm, #bank-account-online, #credit-card-pymt, #debit-card-pymnt, #wire-transfer-pymnt,#bank-account-counter-int, #cheque-pymnt, #online-transfer-pymnt, #cash-pymnt, #collections-alert", "class": "hidden", "live": true}]'>Workplace Safety and Insurance Board for Ontario</li>
                               </ul>
                             </div>
                        </li>
@@ -258,7 +258,7 @@
                       <div class="wb-fieldflow-sub"  data-wb-fieldflow='{"noForm": true, "isoptional": true, "renderas": "radio", "gcChckbxrdio":true, "reset": [{ "action": "addClass", "source":"#ff-results, .alert-hide-reset", "class": "hidden"}, { "action": "removeClass", "source":".ff-answers", "class": "hidden"}]}'>
                         <p>What type of charity payment are you making?</p>
                         <ul>
-                          <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results", "class": "hidden", "live": true}, {"action": "addClass", "source": "#bank-account-pymnt, #bank-account-cra, #credit-card-pymt, #debit-card-pymnt, #wire-transfer-pymnt, #online-transfer-pymnt, #cash-pymnt, #collections-alert", "class": "hidden", "live": true}]'>Re-register a charity</li>
+                          <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results", "class": "hidden", "live": true}, {"action": "addClass", "source": "#bank-account-pymnt, #bank-account-cra, #credit-card-pymt, #debit-card-pymnt, #wire-transfer-pymnt,#bank-account-counter-int, #online-transfer-pymnt, #cash-pymnt, #collections-alert", "class": "hidden", "live": true}]'>Re-register a charity</li>
                          <!-- <li>Penalty on a charity</li>//-->
                         </ul>
                       </div>
@@ -284,12 +284,9 @@
         You need to send your payment to the correct department or agency</h2>
       <p>Other areas you may need to pay:</p>
       <ul class="list-unstyled">
-        <li><strong>For ESDC</strong>:
-<p>To find out how to make payments to Employment and Social Development Canada (ESDC), visit: <a href="https://www.canada.ca/en/employment-social-development/programs/ei/ei-list/overpayments/repayments.html#instructions">Payment instructions for ESDC</a>.</p>
+        <li><strong>For ESDC</strong>:<br> To find out how to make payments to Employment and Social Development Canada (ESDC), visit: <a href="https://www.canada.ca/en/employment-social-development/programs/ei/ei-list/overpayments/repayments.html#instructions">Payment instructions for ESDC</a>
      </li>
-        <li><strong>For CBSA:</strong>
-          <ul class="list-unstyled">
-<p>To find out how to make payments to Canada Border Services Agency (CBSA), visit: <a href="https://www.cbsa-asfc.gc.ca/prog/arl-glcc/pay-paie-eng.html#a05">How to pay the CBSA</a>.</p>
+        <li><strong>For CBSA:</strong><br>To find out how to make payments to Canada Border Services Agency (CBSA), visit: <a href="https://www.cbsa-asfc.gc.ca/prog/arl-glcc/pay-paie-eng.html#a05">How to pay the CBSA</a>
      </li>
       </ul>
     </div>
@@ -301,7 +298,7 @@
 
       <p>Call the benefits line to determine where to send your payment.</p>
       <ul class="list-unstyled" data-ajax-replace="https://www.canada.ca/en/revenue-agency/corporate/contact-information.html#prs-ph-12>li:not(:last-child)">
-        <a href="https://www.canada.ca/en/revenue-agency/corporate/contact-information.html">CRA benefits phone number</a>
+        <li><a href="https://www.canada.ca/en/revenue-agency/corporate/contact-information.html">CRA contact</a></li>
       </ul>
     </div>
   </div>
@@ -360,8 +357,7 @@
             </header>
             <div class="panel-body">
 		 <ul class="fa-ul lst-spcd" role="presentation" data-ajax-append="online-banking.html#pt-1"></ul>   
-             <!-- <p><span class="far fa-clock mrgn-rght-sm"></span><strong>Considered as paid:</strong> the <strong>same or next business day</strong> (varies based on your bank or credit union)</p>//-->
-              <p><span class="h4">Learn how to pay:</span> <a class="stretched-link"  href="online-banking.html">Using your bank or credit union website or app</a></p>
+              <p><span class="h4">Learn how to pay:</span> <a class="stretched-link" href="online-banking.html">Using your bank or credit union website or app</a></p>
             </div>
           </div>
         </div>
