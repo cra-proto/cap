@@ -81,11 +81,11 @@
             <div class="row">
               <div class="col-xs-12">
                 <fieldset>
-                  <legend class="wb-inv">Default</legend>
+                  <legend class="hidden">Default</legend>
                   <ul class="list-unstyled gc-font-2019">
                     <li class="radio">
-                      <label>
-                        <input type="radio" name="pymnt-fltr" class="wb-tagfilter-ctrl" value="" checked>
+                      
+                        <input type="radio" name="pymnt-fltr" class="wb-tagfilter-ctrl" value="" checked="checked" id="fltr-all"><label for="fltr-all">
                         All </label>
                     </li>
                   </ul>
@@ -97,39 +97,39 @@
                   <legend class="h4 mrgn-tp-0">Ways to pay</legend>
                   <ul class="list-unstyled gc-font-2019">
                     <li class="radio">
-                      <label>
-                        <input type="radio" name="pymnt-fltr" class="wb-tagfilter-ctrl" value="ways__deposit">
-                        Direct withdrawal from your Canadian bank account </label>
+                      
+                        <input type="radio" name="pymnt-fltr" class="wb-tagfilter-ctrl" value="ways__deposit" id="fltr-deposit">
+                        <label for="fltr-deposit">Direct withdrawal from your Canadian bank account </label>
                     </li>
                     <li class="radio">
-                      <label>
-                        <input type="radio" name="pymnt-fltr" class="wb-tagfilter-ctrl" value="ways__debit">
-                        Debit card (Interac Debit, Visa Debit, or Debit Mastercard) </label>
+                
+                        <input type="radio" name="pymnt-fltr" class="wb-tagfilter-ctrl" value="ways__debit" id="fltr-debit">
+                        <label for="fltr-debit">Debit card (Interac Debit, Visa Debit, or Debit Mastercard) </label>
                     </li>
                     <li class="radio">
-                      <label>
-                        <input type="radio" name="pymnt-fltr" class="wb-tagfilter-ctrl" value="ways__credit">
-                        Credit card </label>
+                    
+                        <input type="radio" name="pymnt-fltr" class="wb-tagfilter-ctrl" value="ways__credit" id="fltr-credit">
+                          <label for="fltr-credit">Credit card</label>
                     </li>
                     <li class="radio">
-                      <label>
-                        <input type="radio" name="pymnt-fltr" class="wb-tagfilter-ctrl" value="ways__cheque">
-                        Cheque </label>
+                     
+                        <input type="radio" name="pymnt-fltr" class="wb-tagfilter-ctrl" value="ways__cheque" id="fltr-cheque">
+                         <label for="fltr-cheque">Cheque </label>
                     </li>
                     <li class="radio">
-                      <label>
-                        <input type="radio" name="pymnt-fltr" class="wb-tagfilter-ctrl" value="ways__transfer">
-                        Money transfer platform (PayPal, Interac e-transfer) </label>
+                    
+                        <input type="radio" name="pymnt-fltr" class="wb-tagfilter-ctrl" value="ways__transfer" id="fltr-transfer">
+                          <label for="fltr-transfer">Money transfer platform (PayPal, Interac e-transfer) </label>
                     </li>
                     <li class="radio">
-                      <label>
-                        <input type="radio" name="pymnt-fltr" class="wb-tagfilter-ctrl" value="ways__wire">
-                        Wire transfer </label>
+                 
+                        <input type="radio" name="pymnt-fltr" class="wb-tagfilter-ctrl" value="ways__wire" id="fltr-wire">
+                             <label for="fltr-wire">Wire transfer </label>
                     </li>
                     <li class="radio">
-                      <label>
-                        <input type="radio" name="pymnt-fltr" class="wb-tagfilter-ctrl" value="ways__cash">
-                        Cash </label>
+                     
+                        <input type="radio" name="pymnt-fltr" class="wb-tagfilter-ctrl" value="ways__cash" id="fltr-cash">
+                         <label for="fltr-cash">Cash </label>
                     </li>
                   </ul>
                 </fieldset>
@@ -140,19 +140,19 @@
                   <legend class="h4 mrgn-tp-0">Other situations</legend>
                   <ul class="list-unstyled gc-font-2019">
                     <li class="radio">
-                      <label>
-                        <input type="radio" name="pymnt-fltr" class="wb-tagfilter-ctrl" value="time__sameDay">
-                        Considered paid same or next business day </label>
+                      
+                        <input type="radio" name="pymnt-fltr" class="wb-tagfilter-ctrl" value="time__sameDay" id="fltr-sameday">
+                        <label for="fltr-sameday">Considered paid same or next business day </label>
                     </li>
                     <li class="radio">
-                      <label>
-                        <input type="radio" name="pymnt-fltr" class="wb-tagfilter-ctrl" value="type__inter">
-                        Paying from outside of Canada </label>
+                      
+                        <input type="radio" name="pymnt-fltr" class="wb-tagfilter-ctrl" value="type__inter" id="fltr-inter">
+                        <label for="fltr-inter">Paying from outside of Canada </label>
                     </li>
                     <li class="radio">
-                      <label>
-                        <input type="radio" name="pymnt-fltr" class="wb-tagfilter-ctrl" value="pay__multi">
-                        Multiple or future-dated payments </label>
+                      
+                        <input type="radio" name="pymnt-fltr" class="wb-tagfilter-ctrl" value="pay__multi" id="fltr-multi">
+                        <label for="fltr-multi">Multiple or future-dated payments </label>
                     </li>
                   </ul>
                 </fieldset>
@@ -169,7 +169,7 @@
 		"uiTemplate": "#searchFilter"
 	}'>
         <div id="searchFilter">
-          <p class="wb-fltr-info">Payment options: <span class="h3" data-nbitem></span> out of <span class="h3" data-total></span></p>
+          <p class="wb-fltr-info" aria-live="polite">Payment options: <span class="h3" data-nbitem></span> out of <span class="h3" data-total></span></p>
           <input type="search" class="hidden" id="customSearchUI">
         </div>
         <div class="wb-tagfilter-items">
