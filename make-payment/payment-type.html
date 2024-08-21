@@ -124,10 +124,10 @@
         <li>Other benefit, tax, fee or amount owing
           <div class="wb-fieldflow-sub" data-wb-fieldflow='{"noForm": true, "isoptional": true, "renderas": "radio", "gcChckbxrdio":true, "reset": [{ "action": "addClass", "source":"#ff-results, .alert-hide-reset", "class": "hidden"}, { "action": "removeClass", "source":".ff-answers", "class": "hidden"}]}'>
             <div class="wb-fieldflow-header">
-              <p class="wb-fieldflow-label"><span id="paymentToCRA" aria-describedby="paymentToCRA paymentNotCRA">Should you make the payment to the CRA?</span></p>
-              <div class="gc-font-2019">
+ <div class="gc-font-2019 mrgn-bttm-md">
+<p id="gvmt-pymnt-txt">Not all government payments can go through the CRA.</p>	 
                  <details>
-		<summary>Payments the CRA does <strong>not</strong> accept</summary>	
+		<summary aria-describedby="gvmt-pymnt-txt">Payments the CRA does <strong>not</strong> accept</summary>	
 			            <div id="paymentNotCRA">       <p>The CRA does not accept all payments for other government departments. If you're making a payment for an item in this list, select <strong>no</strong>.</p>
                   <h2 class="h3 mrgn-tp-sm">Employment and Social Development Canada (ESDC)</h2>
                   <p>Amounts that should be repaid to ESDC include:</p>
@@ -155,6 +155,9 @@
 				    </div>
                 </details>
               </div>
+		    
+              <p class="wb-fieldflow-label"><span id="paymentToCRA" aria-describedby="paymentToCRA paymentNotCRA">Should you make the payment to the CRA?</span></p>
+             
             </div>
             <ul>
               <li>Yes
