@@ -709,9 +709,13 @@ $( document ).on( "wb-ready.wb", function( event ) {
 $('.gc-chckbxrdio').addClass('gc-chckbxrdio-2').removeClass('gc-chckbxrdio');
 	
 });
-$( document ).on( "draw.wb-fieldflow", ".wb-fieldflow", function( event ) {
+$( '.gc-chckbxrdio' ).on( "ready", function( event ) {
 	$('.gc-chckbxrdio').addClass('gc-chckbxrdio-2').removeClass('gc-chckbxrdio');
-});		
+});
+$( 'label' ).on( "click", function( event ) {
+	$('.gc-chckbxrdio').addClass('gc-chckbxrdio-2').removeClass('gc-chckbxrdio');
+});
+		
 	</script>
 </body>
 </html>
