@@ -709,7 +709,9 @@ $( document ).on( "wb-ready.wb", function( event ) {
 $('.gc-chckbxrdio').addClass('gc-chckbxrdio-2').removeClass('gc-chckbxrdio');
 	
 });
-		
+$( document ).on( "draw.wb-fieldflow", ".wb-fieldflow", function( event ) {
+	$('.gc-chckbxrdio').addClass('gc-chckbxrdio-2').removeClass('gc-chckbxrdio');
+});		
 	</script>
 </body>
 </html>
