@@ -713,7 +713,7 @@ $( '.gc-chckbxrdio' ).on( "ready", function( event ) {
 	$('.gc-chckbxrdio').addClass('gc-chckbxrdio-2').removeClass('gc-chckbxrdio');
 	alert('clicked on ready');
 });
-$( 'label' ).on( "click", function( event ) {
+$( 'label, input[type=radio]' ).click(function( event ) {
 	$('.gc-chckbxrdio').addClass('gc-chckbxrdio-2').removeClass('gc-chckbxrdio');
 	alert('clicked on click');
 });
