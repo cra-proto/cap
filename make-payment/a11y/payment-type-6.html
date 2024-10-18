@@ -714,7 +714,9 @@ $(document).on('click', 'input[type=radio]', function( event ) {
 	$('.gc-chckbxrdio').addClass('gc-chckbxrdio-2').removeClass('gc-chckbxrdio');
 	alert('clicked');
 });
-		
+	$( document ).on( "draw.wb-fieldflow", ".wb-fieldflow", function( event ) {
+		alert("drawn!");
+});	
 	</script>
 </body>
 </html>
