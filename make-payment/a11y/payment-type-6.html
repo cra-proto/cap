@@ -21,34 +21,34 @@
       </script>
 <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/theme.min.css"/>
 <style>
-fieldset {
+fieldset.gc-chckbxrdio-2 {
     border-top: 0;
     padding-top: 0
 }
- legend {
+.gc-chckbxrdio-2 legend {
     float: none;
     font-size: 22px;
     font-weight: 700;
     margin-bottom: 15px;
     margin-top: 0
 }	
- input[type=radio] {
+.gc-chckbxrdio-2 input[type=radio] {
    opacity: 0;
 }
-nput[type=radio][disabled]+label {
+.gc-chckbxrdio-2 input[type=radio][disabled]+label {
     cursor: not-allowed;
     opacity: .5
 }
-input[type=radio]+label:hover::before {
+.gc-chckbxrdio-2 input[type=radio]+label:hover::before {
     background-image: -webkit-gradient(linear,left top,left bottom,from(#e6e5e5),color-stop(50%,#fff));
     background-image: linear-gradient(to bottom,#e6e5e5,#fff 50%)
 }
 
-input[type=radio]:focus+label::before {
+.gc-chckbxrdio-2 input[type=radio]:focus+label::before {
     -webkit-box-shadow: 0 0 0 2px #000,0 0 8px 4px #3b99fc;
     box-shadow: 0 0 0 2px #000,0 0 8px 4px #3b99fc
 }	
-input[type=radio]+label::before {
+.gc-chckbxrdio-2 input[type=radio]+label::before {
     border: 4px solid #fff;
     -webkit-box-shadow: 0 0 0 2px #000;
     box-shadow: 0 0 0 2px #000;
@@ -60,21 +60,21 @@ input[type=radio]+label::before {
     top: 2px;
     width: 36px;
 }
- input[type=radio]+label::before {
+.gc-chckbxrdio-2 input[type=radio]+label::before {
     border-radius: 50%;
 }
-input[type=radio]+label {
+.gc-chckbxrdio-2 input[type=radio]+label {
     display: inline-block;
     line-height: 2;
     margin-left: 36px;
     width: auto;
 }
- label {
+.gc-chckbxrdio-2 label {
     cursor: pointer;
     display: block;
     font-size: 20px;
 }
- input[type=radio]:checked+label::before {
+.gc-chckbxrdio-2 input[type=radio]:checked+label::before {
     background: #444;
 }
   </style>
@@ -704,5 +704,12 @@ input[type=radio]+label {
          }));
       </script> 
 <script src="https://cra-proto.github.io/cap/js/feedback-banner.js"></script>
+	<script>
+$( document ).on( "wb-ready.wb", function( event ) {
+$('.gc-chckbxrdio').addClass('.gc-chckbxrdio-2').removeClass('.gc-chckbxrdio');
+	
+});
+		
+	</script>
 </body>
 </html>
