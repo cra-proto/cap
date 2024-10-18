@@ -709,13 +709,10 @@ $( document ).on( "wb-ready.wb", function( event ) {
 $('.gc-chckbxrdio').addClass('gc-chckbxrdio-2').removeClass('gc-chckbxrdio');
 	
 });
-$( '.gc-chckbxrdio' ).on( "ready", function( event ) {
+
+$(document).on('click', 'input[type=radio]', function( event ) {
 	$('.gc-chckbxrdio').addClass('gc-chckbxrdio-2').removeClass('gc-chckbxrdio');
-	alert('clicked on ready');
-});
-$( 'label, input[type=radio]' ).click(function( event ) {
-	$('.gc-chckbxrdio').addClass('gc-chckbxrdio-2').removeClass('gc-chckbxrdio');
-	alert('clicked on click');
+	
 });
 		
 	</script>
